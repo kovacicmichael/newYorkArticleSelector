@@ -16,7 +16,7 @@ $("#submit").on("click", function(event){
 	userTerm = JSON.stringify($("#search-term").val());//their variable
 	beginYear = JSON.stringify($("#start").val()); //year
 	endYear = JSON.stringify($("#end").val());// end year
-	articleNum = JSON.stringify($("#sel1").val());
+	articleNum = JSON.stringify($("#sel1").val().trim());
 
 
 		var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
